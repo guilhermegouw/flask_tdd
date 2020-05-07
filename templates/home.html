@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{{ perfil.nome }}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <img src="{{ perfil.foto }}" alt="{{ perfil.nome }}" class="img-circle">
+                <h1>{{ perfil.nome }}</h1>
+                <p>{{ perfil.descricao }}</p>
+                <p><a class="btn btn-primary btn-lg" href="{{ perfil.url }}" role="button">Github {{ perfil.nome }}</a></p>
+            </div>
+        </div>
+    </body>
+</html>
